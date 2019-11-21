@@ -1,0 +1,5 @@
+gym_segwey.egg-info/PKG-INFO
+gym_segwey.egg-info/SOURCES.txt
+gym_segwey.egg-info/dependency_links.txt
+gym_segwey.egg-info/requires.txt
+gym_segwey.egg-info/top_level.txt
