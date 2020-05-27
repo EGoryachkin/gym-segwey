@@ -56,13 +56,14 @@ class SegweyEnv(gym.Env):
 			self.steps_beyond_done += 1
 			reward = 0.0
 		
-		return np.array(self.state), reward, done, {}
+		return np.array(self.state).reshape((4,)), reward, done, {}
 		
 	def reset(self):
-		self.state = np.array([[0.],[random.gauss(0, 1.5)],[0.],[0.]])
+		self.state = np.array([[0.],[random.gauss(0, 1.5)],[0.],[0.]]).reshape((4,))
 		# self.state = np.array([[0.],[random.gauss(0, 0.5)],[0.],[0.]])
 		self.steps_beyond_done = None
-		return np.array(self.state)
+		print("self.state")
+		return np.array(self.state).reshape((4,))
 
 		
 	def render(self, mode='human'):
